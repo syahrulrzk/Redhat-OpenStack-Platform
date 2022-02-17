@@ -1,4 +1,4 @@
-Environment (lingkungan)
+# Environment (lingkungan)
    
 Bagian ini menjelaskan cara mengkonfigurasi controller node dan satu compute node menggunakan arsitektur contoh.
 
@@ -40,9 +40,9 @@ Kemampuan untuk mengambil periodik "snap shots" selama proses instalasi dan "rol
 
 Namun, VM akan mengurangi kinerja instance Anda, terutama jika hypervisor Anda dan/atau prosesor kekurangan dukungan untuk akselerasi hardware untuk nested VM.
 
- Catatan
+```<b>Catatan</b>
 
-Jika Anda memilih untuk menginstal pada VM, pastikan hypervisor Anda menyediakan cara untuk menonaktifkan penyaringan MAC address pada antarmuka jaringan provider.
+Jika Anda memilih untuk menginstal pada VM, pastikan hypervisor Anda menyediakan cara untuk menonaktifkan penyaringan MAC address pada antarmuka jaringan provider.```
 
 Untuk informasi lebih lanjut tentang persyaratan sistem, lihat OpenStack Pike Administrator Guides, the OpenStack Queens Administrator Guides, atau the OpenStack Rocky Administrator Guides.
 <ul>
