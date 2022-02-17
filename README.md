@@ -62,4 +62,4 @@ Opsi jaringan self-service menambah opsi jaringan provider dengan layanan lapisa
 
 Pengguna OpenStack dapat membuat jaringan virtual tanpa sepengetahuan infrastruktur yang mendasarinya pada jaringan data. Ini juga bisa mencakup jaringan VLAN jika plug-in layer-2 dikonfigurasikan.
    
-<p align="center"><img src="https://drive.google.com/uc?export=view&id=1tT1Le-V-dzL3x6wGPyb7er1FOdDsu1s1"></p>
+<p align="center"><img src="https://drive.google.com/uc?export=view&id=1LBncieaAiyHvlsBT2JLMtEXH7G-I-VmC"></p>
