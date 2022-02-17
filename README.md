@@ -21,3 +21,29 @@ Pengguna dapat mengakses OpenStack melalui antarmuka pengguna berbasis web yang 
 
 Diagram berikut menunjukkan arsitektur yang paling umum namun tidak mungkin untuk awan OpenStack:
 <p align="center"><img src="https://drive.google.com/uc?export=view&id=1WVuTUoZ6tfNtW776txyDV206R78uXH_3"></p>
+
+### Controller¶
+Node pengontrol menjalankan layanan Identity, layanan Image, layanan Placement, bagian manajemen Compute, bagian manajemen dari Networking, berbagai agen Networking, dan Dashboard. Ini juga termasuk layanan pendukung seperti database SQL, message queue, dan NTP.
+
+Secara opsional, controller node menjalankan bagian dari layanan Block Storage, Object Storage, Orchestration, and Telemetry
+
+Controller nodemembutuhkan minimal dua antarmuka jaringan.
+
+### Komputasi¶
+The menghitung node menjalankan: istilah: hypervisor porsi Compute yang beroperasi contoh. Secara default, Hitung menggunakan: istilah: KVM <berbasis kernel VM (KVM)> hypervisor. The menghitung node juga menjalankan agen layanan Jaringan yang menghubungkan contoh untuk jaringan virtual dan menyediakan layanan firewall untuk contoh melalui: istilah: kelompok keamanan <grup keamanan>.
+
+Anda dapat menyebarkan lebih dari satu menghitung node. Setiap node membutuhkan minimal dua antarmuka jaringan.
+
+### Block Storage¶
+Opsional Block Storage node berisi disk bahwa Blok Storage dan bersama penyediaan layanan File System untuk contoh.
+
+Untuk mempermudah, trafik layanan antara node komputasi dan node ini menggunakan jaringan manajemen. lingkungan produksi harus menerapkan jaringan penyimpanan terpisah untuk meningkatkan kinerja dan keamanan.
+
+Anda dapat menyebarkan lebih dari satu node penyimpanan blok. Setiap node membutuhkan minimal satu antarmuka jaringan.
+
+### Object Storage¶
+Opsional Object Storage simpul berisi disk bahwa layanan Object Storage menggunakan piutang menyimpan, kontainer, dan benda-benda.
+
+Untuk mempermudah, trafik layanan antara node komputasi dan node ini menggunakan jaringan manajemen. lingkungan produksi harus menerapkan jaringan penyimpanan terpisah untuk meningkatkan kinerja dan keamanan.
+
+Layanan ini memerlukan dua node. Setiap node membutuhkan minimal satu antarmuka jaringan. Anda dapat menyebarkan lebih dari dua node penyimpanan objek.
