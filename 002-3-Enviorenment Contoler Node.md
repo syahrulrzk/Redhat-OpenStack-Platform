@@ -1,12 +1,11 @@
 # Configure network interfaces¶
-
 <ul>
-<li>Mengkonfigurasi interface pertama sebagai interface manajemen:
+<li>1. Mengkonfigurasi interface pertama sebagai interface manajemen:
 IP address: 10.0.0.11
 Network mask: 255.255.255.0 (or /24)
   Default gateway: 10.0.0.1</li>
 
-<li>Provider interface menggunakan konfigurasi khusus tanpa alamat IP yang ditugaskan untuk itu. Mengkonfigurasi interface kedua sebagai provider interface:
+<li>2. Provider interface menggunakan konfigurasi khusus tanpa alamat IP yang ditugaskan untuk itu. Mengkonfigurasi interface kedua sebagai provider interface:
 Ganti INTERFACE_NAME dengan nama interface yang sebenarnya. Misalnya, *eth1 * atau *ens224 *.
   Untuk Ubuntu:</li>
 </ul>
@@ -29,5 +28,5 @@ TYPE=Ethernet
 ONBOOT="yes"
 BOOTPROTO="none"</pre>
 
-<ul><li>Reboot sistem untuk mengaktifkan perubahan.</li></ul>
+<ul><li>3. Reboot sistem untuk mengaktifkan perubahan.</li></ul>
 
