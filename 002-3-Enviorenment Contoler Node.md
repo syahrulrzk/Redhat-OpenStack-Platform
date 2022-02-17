@@ -19,3 +19,15 @@ auto INTERFACE_NAME
 iface INTERFACE_NAME inet manual
 up ip link set dev $IFACE up
 down ip link set dev $IFACE down</pre>
+
+Untuk RHEL/CENTOs
+<li>Edit file /etc/sysconfig/network-scripts/ifcfg-INTERFACE_NAME mengandung berikut:
+Jangan mengubah HWADDR dan UUID keys.</li>
+<pre>
+DEVICE=INTERFACE_NAME
+TYPE=Ethernet
+ONBOOT="yes"
+BOOTPROTO="none"</pre>
+
+<ul><li>Reboot sistem untuk mengaktifkan perubahan.</li></ul>
+
