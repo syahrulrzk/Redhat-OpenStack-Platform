@@ -51,9 +51,15 @@ Layanan ini memerlukan dua node. Setiap node membutuhkan minimal satu antarmuka 
 ## Networking¶
 Pilih salah satu opsi jaringan virtual berikut.
 
-   <b>Jaringan Opsi 1: Jaringan Provider</b>
+### Jaringan Opsi 1: Jaringan Provider
 Opsi jaringan penyedia menyebarkan layanan OpenStack Networking dengan cara paling sederhana mungkin dengan terutama layanan lapisan-2 (bridging / switching) dan VLAN segmentasi jaringan. Pada dasarnya, hal ini menjembatani jaringan virtual untuk jaringan fisik dan bergantung pada infrastruktur jaringan fisik untuk layanan lapisan-3 (routing). Selain itu, :term:`DHCP<Dynamic Host Configuration Protocol (DHCP)>`layanan memberikan informasi alamat IP untuk instance.
 
 Pengguna OpenStack membutuhkan lebih banyak informasi tentang infrastruktur jaringan yang mendasarinya untuk menciptakan jaringan virtual agar sesuai dengan infrastruktur.
 <p align="center"><img src="https://drive.google.com/uc?export=view&id=1tT1Le-V-dzL3x6wGPyb7er1FOdDsu1s1"></p>
    
+## Jaringan Opsi 2: Jaringan self-service¶
+Opsi jaringan self-service menambah opsi jaringan provider dengan layanan lapisan-3 (routing) yang mengaktifkan jaringan self-service menggunakan metode segmentasi overlay seperti VXLAN. Pada dasarnya, itu me-rute jaringan virtual ke jaringan fisik dengan menggunakan NAT. Selain itu, opsi ini memberikan landasan bagi layanan canggih seperti LBaaS dan FWaaS.
+
+Pengguna OpenStack dapat membuat jaringan virtual tanpa sepengetahuan infrastruktur yang mendasarinya pada jaringan data. Ini juga bisa mencakup jaringan VLAN jika plug-in layer-2 dikonfigurasikan.
+   
+<p align="center"><img src="https://drive.google.com/uc?export=view&id=1tT1Le-V-dzL3x6wGPyb7er1FOdDsu1s1"></p>
