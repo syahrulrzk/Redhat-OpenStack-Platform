@@ -5,3 +5,16 @@ Semua node membutuhkan akses internet untuk tujuan administratif seperti instala
 
 Dalam arsitektur jaringan provider, semua instance berhubungan langsung ke jaringan provider. Di arsitektur jaringan self-service (private), instance dapat berhubungan ke jaringan self-service atau provider. Jaringan self-service dapat berada sepenuhnya dalam OpenStack atau memberikan beberapa tingkat akses jaringan eksternal menggunakan NAT melalui jaringan provider.
 
+<p align="center"><img src="https://drive.google.com/uc?export=view&id=1kUSK8fXmmwZ3ncQSRHv8L7J-wthfkWAQ"></p>
+
+Arsitektur contoh menganggap penggunaan jaringan berikut:
+
+<ul>
+<li>Manajemen pada 10.0.0.0/24 dengan gateway 10.0.0.1
+
+Jaringan ini memerlukan gateway untuk menyediakan akses Internet untuk semua node untuk tujuan administratif seperti instalasi paket, update keamanan, DNS, dan NTP.</li>
+
+<li>Provider pada 203.0.113.0/24 dengan gateway 203.0.113.1
+
+Jaringan ini memerlukan gateway untuk menyediakan akses Internet untuk instance di lingkungan OpenStack Anda.</li>
+</ul>
