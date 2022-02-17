@@ -47,3 +47,13 @@ Opsional Object Storage simpul berisi disk bahwa layanan Object Storage mengguna
 Untuk mempermudah, trafik layanan antara node komputasi dan node ini menggunakan jaringan manajemen. lingkungan produksi harus menerapkan jaringan penyimpanan terpisah untuk meningkatkan kinerja dan keamanan.
 
 Layanan ini memerlukan dua node. Setiap node membutuhkan minimal satu antarmuka jaringan. Anda dapat menyebarkan lebih dari dua node penyimpanan objek.
+
+## Networking¶
+Pilih salah satu opsi jaringan virtual berikut.
+
+   <b>Jaringan Opsi 1: Jaringan Provider</b>
+Opsi jaringan penyedia menyebarkan layanan OpenStack Networking dengan cara paling sederhana mungkin dengan terutama layanan lapisan-2 (bridging / switching) dan VLAN segmentasi jaringan. Pada dasarnya, hal ini menjembatani jaringan virtual untuk jaringan fisik dan bergantung pada infrastruktur jaringan fisik untuk layanan lapisan-3 (routing). Selain itu, :term:`DHCP<Dynamic Host Configuration Protocol (DHCP)>`layanan memberikan informasi alamat IP untuk instance.
+
+Pengguna OpenStack membutuhkan lebih banyak informasi tentang infrastruktur jaringan yang mendasarinya untuk menciptakan jaringan virtual agar sesuai dengan infrastruktur.
+<p align="center"><img src="https://drive.google.com/uc?export=view&id=1tT1Le-V-dzL3x6wGPyb7er1FOdDsu1s1"></p>
+   
