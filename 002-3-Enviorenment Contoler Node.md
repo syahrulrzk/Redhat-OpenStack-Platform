@@ -30,3 +30,10 @@ BOOTPROTO="none"</pre>
 
 <ul><li>3. Reboot sistem untuk mengaktifkan perubahan.</li></ul>
 
+# Konfigurasi resolusi nama¶
+
+<ul>
+1. Mengatur hostname dari node untuk controller.
+2. Mengedit file /etc/hosts memuat berikut
+</ul>
+
