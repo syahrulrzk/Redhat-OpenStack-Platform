@@ -69,3 +69,7 @@ Tabel berikut daftar layanan yang membutuhkan password dan referensi terkait dal
             <td>RABBIT_PASS</td>
             <td>Password dari pengguna RabbitMQ openstack</td>
  </table>
+
+OpenStack dan layanan pendukung memerlukan hak administratif selama instalasi dan operasi. Dalam beberapa kasus, layanan melakukan modifikasi pada host yang dapat mengganggu alat otomasi penyebaran seperti Ansible, Chef, dan Puppet. Sebagai contoh, beberapa layanan OpenStack menambahkan pembungkus root (root wrapper) ke `` sudo`` yang dapat mengganggu kebijakan keamanan. Lihat Compute service documentation for Pike, the Compute service documentation for Queens, atau the Compute service documentation for Rocky untuk informasi lebih lanjut.
+
+Layanan Networking mengasumsikan nilai default untuk parameter jaringan kernel dan memodifikasi aturan firewall. Untuk menghindari sebagian besar masalah selama instalasi awal Anda, kami sarankan menggunakan pengerahan stok distribusi yang didukung pada host Anda. Namun, jika Anda memilih untuk mengotomatisasi pengerahan host Anda, tinjaulah konfigurasi dan kebijakan yang diterapkan kepada mereka sebelum melanjutkan lebih lanjut.
