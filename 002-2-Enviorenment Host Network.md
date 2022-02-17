@@ -11,10 +11,8 @@ Arsitektur contoh menganggap penggunaan jaringan berikut:
 
 <ul>
 <li>Manajemen pada 10.0.0.0/24 dengan gateway 10.0.0.1
-
 Jaringan ini memerlukan gateway untuk menyediakan akses Internet untuk semua node untuk tujuan administratif seperti instalasi paket, update keamanan, DNS, dan NTP.</li>
 
 <li>Provider pada 203.0.113.0/24 dengan gateway 203.0.113.1
-
 Jaringan ini memerlukan gateway untuk menyediakan akses Internet untuk instance di lingkungan OpenStack Anda.</li>
 </ul>
