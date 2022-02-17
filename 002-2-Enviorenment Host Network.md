@@ -16,3 +16,11 @@ Jaringan ini memerlukan gateway untuk menyediakan akses Internet untuk semua nod
 <li>Provider pada 203.0.113.0/24 dengan gateway 203.0.113.1
 Jaringan ini memerlukan gateway untuk menyediakan akses Internet untuk instance di lingkungan OpenStack Anda.</li>
 </ul>
+
+Anda dapat memodifikasi rentang ini dan gateway untuk bekerja dengan infrastruktur jaringan tertentu.
+
+Nama antarmuka jaringan bervariasi dengan distribusi. Secara tradisional, interface menggunakan eth diikuti dengan nomor urut. Untuk mencakup semua variasi, panduan ini mengacu pada antarmuka pertama sebagai antarmuka dengan nomor terendah dan antarmuka kedua sebagai antarmuka dengan nomor tertinggi.
+
+Kecuali Anda berniat untuk menggunakan konfigurasi yang tepat tersedia dalam contoh arsitektur ini, Anda harus memodifikasi jaringan dalam prosedur ini untuk mencocokkan lingkungan Anda. Setiap node harus menyelesaikan node lainnya dengan nama selain alamat IP. Sebagai contoh, nama controller harus memutuskan (resolve) ke `` 10.0.0.11``, alamat IP dari antarmuka manajemen pada controller node.
+
+
