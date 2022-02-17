@@ -10,3 +10,12 @@ Network mask: 255.255.255.0 (or /24)
 Ganti INTERFACE_NAME dengan nama interface yang sebenarnya. Misalnya, *eth1 * atau *ens224 *.
   Untuk Ubuntu:</li>
 </ul>
+
+Untuk Ubuntu/Debian :
+<li>Edit file /etc/network/interfaces berisi sebagai berikut:</li>
+<pre>
+# The provider network interface
+auto INTERFACE_NAME
+iface INTERFACE_NAME inet manual
+up ip link set dev $IFACE up
+down ip link set dev $IFACE down</pre>
