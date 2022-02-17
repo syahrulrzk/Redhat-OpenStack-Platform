@@ -1,0 +1,7 @@
+# Host Network
+Setelah menginstal sistem operasi pada setiap node untuk arsitektur yang Anda pilih untuk digunakan, Anda harus mengkonfigurasi antarmuka jaringan. Sebaiknya nonaktifkan alat pengelolaan jaringan otomatis dan edit secara manual file konfigurasi yang sesuai untuk distribusi Anda. Untuk informasi lebih lanjut tentang cara mengkonfigurasi jaringan pada distribusi Anda, lihat dokumentasi.
+
+Semua node membutuhkan akses internet untuk tujuan administratif seperti instalasi paket, update keamanan, DNS, dan NTP. Dalam kebanyakan kasus, node harus mendapatkan akses Internet melalui antarmuka jaringan manajemen. Untuk menyoroti pentingnya pemisahan jaringan, contoh arsitektur menggunakan private address space untuk jaringan manajemen dan menganggap dimana infrastruktur jaringan fisik menyediakan akses internet melalui NAT atau metode lainnya. Contoh arsitektur menggunakan ruang alamat IP routable untuk jaringan penyedia (eksternal) dan menganggap bahwa infrastruktur jaringan fisik menyediakan akses internet langsung.
+
+Dalam arsitektur jaringan provider, semua instance berhubungan langsung ke jaringan provider. Di arsitektur jaringan self-service (private), instance dapat berhubungan ke jaringan self-service atau provider. Jaringan self-service dapat berada sepenuhnya dalam OpenStack atau memberikan beberapa tingkat akses jaringan eksternal menggunakan NAT melalui jaringan provider.
+
