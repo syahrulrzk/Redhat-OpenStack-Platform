@@ -10,13 +10,14 @@ Instal paket:
 <pre> apt install rabbitmq-server</pre>
 Tambahkan openstackpengguna:
 
-# rabbitmqctl add_user openstack RABBIT_PASS
+<pre> rabbitmqctl add_user openstack RABBIT_PASS
 
-Creating user "openstack" ...
+Creating user "openstack" ...</pre>
+
 Ganti RABBIT_PASSdengan kata sandi yang sesuai.
 
 Izinkan akses konfigurasi, tulis, dan baca untuk openstackpengguna:
 
-# rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+<pre> rabbitmqctl set_permissions openstack ".*" ".*" ".*"
 
-Setting permissions for user "openstack" in vhost "/" ...
+Setting permissions for user "openstack" in vhost "/" ...</pre>
