@@ -14,18 +14,22 @@ Buat dan edit ```/etc/mysql/mariadb.conf.d/99-openstack.cnffile``` dan selesaika
 
 Buat [mysqld]bagian, dan atur bind-address kunci ke alamat IP manajemen dari node pengontrol untuk mengaktifkan akses oleh node lain melalui jaringan manajemen. Setel kunci tambahan untuk mengaktifkan opsi yang berguna dan rangkaian karakter UTF-8:
 
+<pre>
 [mysqld]
-bind-address = 10.0.0.11
+bind-address = 10.0.0.11</pre>
 
+<pre>
 default-storage-engine = innodb
 innodb_file_per_table = on
 max_connections = 4096
 collation-server = utf8_general_ci
 character-set-server = utf8
+</pre>
+
 Selesaikan instalasi
 Mulai ulang layanan basis data:
 
-# service mysql restart
+<pre> service mysql restart<pre>
 Amankan layanan database dengan menjalankan mysql_secure_installation skrip. Secara khusus, pilih kata sandi yang sesuai untuk rootakun database:
 
-# mysql_secure_installation
+<pre> mysql_secure_installation</pre>
