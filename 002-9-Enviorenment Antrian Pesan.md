@@ -7,7 +7,7 @@ Antrian pesan berjalan pada node controller.
 Instal dan konfigurasikan komponen
 Instal paket:
 
-# apt install rabbitmq-server
+<pre> apt install rabbitmq-server</pre>
 Tambahkan openstackpengguna:
 
 # rabbitmqctl add_user openstack RABBIT_PASS
