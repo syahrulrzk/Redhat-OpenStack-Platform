@@ -4,11 +4,13 @@ Sebagian besar layanan OpenStack menggunakan database SQL untuk menyimpan inform
 
 Pada Ubuntu 20.04, instal paket-paket:
 
-# apt install mariadb-server python3-pymysql
+<pre> apt install mariadb-server python3-pymysql</pre>
+
 Pada Ubuntu 18.04 atau 16.04, instal paket:
 
-# apt install mariadb-server python-pymysql
-Buat dan edit /etc/mysql/mariadb.conf.d/99-openstack.cnffile dan selesaikan tindakan berikut:
+<pre> apt install mariadb-server python-pymysql</pre>
+
+Buat dan edit ```/etc/mysql/mariadb.conf.d/99-openstack.cnffile``` dan selesaikan tindakan berikut:
 
 Buat [mysqld]bagian, dan atur bind-address kunci ke alamat IP manajemen dari node pengontrol untuk mengaktifkan akses oleh node lain melalui jaringan manajemen. Setel kunci tambahan untuk mengaktifkan opsi yang berguna dan rangkaian karakter UTF-8:
 
