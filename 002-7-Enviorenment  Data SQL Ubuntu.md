@@ -29,7 +29,7 @@ character-set-server = utf8
 Selesaikan instalasi
 Mulai ulang layanan basis data:
 
-<pre> service mysql restart<pre>
+<pre> service mysql restart</pre>
 Amankan layanan database dengan menjalankan mysql_secure_installation skrip. Secara khusus, pilih kata sandi yang sesuai untuk rootakun database:
 
 <pre> mysql_secure_installation</pre>
