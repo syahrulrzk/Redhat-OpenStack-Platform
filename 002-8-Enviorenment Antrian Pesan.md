@@ -1,4 +1,4 @@
-Antrian pesan untuk RHEL dan CentOS
+# Antrian pesan untuk RHEL dan CentOS
    
 OpenStack menggunakan antrian pesan untuk mengoordinasikan operasi dan informasi status di antara layanan. Layanan antrian pesan biasanya berjalan pada node controller. OpenStack mendukung beberapa layanan antrian pesan termasuk RabbitMQ , Qpid , dan ZeroMQ . Namun, sebagian besar distribusi yang mengemas OpenStack mendukung layanan antrian pesan tertentu. Panduan ini mengimplementasikan layanan antrian pesan RabbitMQ karena sebagian besar distribusi mendukungnya. Jika Anda lebih suka menerapkan layanan antrian pesan yang berbeda, lihat dokumentasi yang terkait dengannya.
 
@@ -7,20 +7,21 @@ Antrian pesan berjalan pada node controller.
 Instal dan konfigurasikan komponen
 Instal paket:
 
-# yum install rabbitmq-server
+<pre> yum install rabbitmq-server</pre>
 Mulai layanan antrian pesan dan konfigurasikan untuk memulai saat sistem melakukan booting:
 
-# systemctl enable rabbitmq-server.service
-# systemctl start rabbitmq-server.service
+<pre> systemctl enable rabbitmq-server.service</pre>
+<pre> systemctl start rabbitmq-server.service</pre>
 Tambahkan openstackpengguna:
 
-# rabbitmqctl add_user openstack RABBIT_PASS
+<pre> rabbitmqctl add_user openstack RABBIT_PASS
 
-Creating user "openstack" ...
+Creating user "openstack" ...</pre>
+
 Ganti RABBIT_PASSdengan kata sandi yang sesuai.
 
 Izinkan akses konfigurasi, tulis, dan baca untuk openstackpengguna:
 
-# rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+<pre> rabbitmqctl set_permissions openstack ".*" ".*" ".*"
 
-Setting permissions for user "openstack" in vhost "/" ...
+Setting permissions for user "openstack" in vhost "/" ...</pre>
