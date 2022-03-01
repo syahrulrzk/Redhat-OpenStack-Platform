@@ -28,8 +28,7 @@ Untuk memperluas penyebaran Nova secara horizontal, kami memiliki konsep shardin
   <li>Konduktor : Menangani permintaan yang memerlukan koordinasi (membangun/mengubah ukuran), bertindak sebagai proxy database, atau menangani konversi objek.</li>
   <li>:placement-doc:`Placement <>` : Melacak inventaris dan penggunaan penyedia sumber daya.</li>
 </ul>
-
-
+Meskipun semua layanan dirancang agar dapat diskalakan secara horizontal, Anda harus memiliki komputasi yang jauh lebih banyak daripada yang lainnya.
 
 ## For End User
 Sebagai pengguna akhir nova, Anda akan menggunakan nova untuk membuat dan mengelola server dengan alat atau API secara langsung.
