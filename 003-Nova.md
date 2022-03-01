@@ -1,6 +1,6 @@
 # OpenStack Compute (nova)
 
-## Apa itu nova? kan
+## Apa itu nova?
 Nova adalah proyek OpenStack yang menyediakan cara untuk menyediakan instance komputasi (alias server virtual). Nova mendukung pembuatan mesin virtual, server baremetal (melalui penggunaan ironic), dan memiliki dukungan terbatas untuk wadah sistem. Nova berjalan sebagai satu set daemon di atas server Linux yang ada untuk menyediakan layanan itu.
 
 Ini membutuhkan layanan OpenStack tambahan berikut untuk fungsi dasar:
