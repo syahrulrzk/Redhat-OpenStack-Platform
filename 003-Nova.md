@@ -21,12 +21,12 @@ Nova menggunakan database SQL tradisional untuk menyimpan informasi. Ini (secara
 Untuk memperluas penyebaran Nova secara horizontal, kami memiliki konsep sharding penerapan yang disebut sel . Semua penerapan berisi setidaknya satu sel. Untuk informasi lebih lanjut, lihat Sel (v2) .
 <p align="center"><img src="https://drive.google.com/uc?export=view&id=1WKpnHu-_GxAFd2bJ0-5udTLYMBRrRd9C"> </p>
 <ul>
-  <li>DB : Database SQL untuk penyimpanan data.</li>
-  <li>API : Komponen yang menerima permintaan HTTP, mengubah perintah dan berkomunikasi dengan komponen lain melalui antrian oslo.messaging atau HTTP.</li>
-  <li>Scheduler : Memutuskan host mana yang mendapatkan setiap instance.</li>
-  <li>Compute : Mengelola komunikasi dengan hypervisor dan mesin virtual.</li>
-  <li>Konduktor : Menangani permintaan yang memerlukan koordinasi (membangun/mengubah ukuran), bertindak sebagai proxy database, atau menangani konversi objek.</li>
-  <li>:placement-doc:`Placement <>` : Melacak inventaris dan penggunaan penyedia sumber daya.</li>
+  <li><b>DB</b> : Database SQL untuk penyimpanan data.</li>
+  <li><b>API</b> : Komponen yang menerima permintaan HTTP, mengubah perintah dan berkomunikasi dengan komponen lain melalui antrian oslo.messaging atau HTTP.</li>
+  <li><b>Scheduler</b> : Memutuskan host mana yang mendapatkan setiap instance.</li>
+  <li><b>Compute</b> : Mengelola komunikasi dengan hypervisor dan mesin virtual.</li>
+  <li><b>Konduktor</b> : Menangani permintaan yang memerlukan koordinasi (membangun/mengubah ukuran), bertindak sebagai proxy database, atau menangani konversi objek.</li>
+  <li><b>:placement-doc</b>:`Placement <>` : Melacak inventaris dan penggunaan penyedia sumber daya.</li>
 </ul>
 Meskipun semua layanan dirancang agar dapat diskalakan secara horizontal, Anda harus memiliki komputasi yang jauh lebih banyak daripada yang lainnya.
 
