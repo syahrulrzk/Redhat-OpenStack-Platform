@@ -33,7 +33,7 @@ Meskipun semua layanan dirancang agar dapat diskalakan secara horizontal, Anda h
 ## For End User
 Sebagai pengguna akhir nova, Anda akan menggunakan nova untuk membuat dan mengelola server dengan alat atau API secara langsung.
 <ul>
-<li> Horizon : UI web resmi untuk Proyek OpenStack.</li>
-<li>OpenStack Client : CLI resmi untuk Proyek OpenStack. Anda harus menggunakan ini sebagai CLI Anda untuk banyak hal, ini tidak hanya mencakup perintah nova tetapi juga perintah untuk sebagian besar proyek di OpenStack.</li>
-<li> Nova Client : Untuk beberapa fitur (atau perintah administratif) nova yang sangat canggih, Anda mungkin perlu menggunakan klien nova. Itu masih didukung, tetapi cli <b>openstack</b> direkomendasikan.</li>
+  <li><b>Horizon</b> : UI web resmi untuk Proyek OpenStack.</li>
+  <li><b>OpenStack Client</b> : CLI resmi untuk Proyek OpenStack. Anda harus menggunakan ini sebagai CLI Anda untuk banyak hal, ini tidak hanya mencakup perintah nova tetapi juga perintah untuk sebagian besar proyek di OpenStack.</li>
+  <li><b>Nova Client</b> : Untuk beberapa fitur (atau perintah administratif) nova yang sangat canggih, Anda mungkin perlu menggunakan klien nova. Itu masih didukung, tetapi cli <b>openstack</b> direkomendasikan.</li>
 </ul>
