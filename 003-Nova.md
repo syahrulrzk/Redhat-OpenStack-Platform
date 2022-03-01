@@ -19,7 +19,7 @@ Server API memproses permintaan REST, yang biasanya melibatkan pembacaan/penulis
 Nova menggunakan database SQL tradisional untuk menyimpan informasi. Ini (secara logis) dibagi antara beberapa komponen. Untuk membantu pemutakhiran, database diakses melalui lapisan objek yang memastikan bidang kontrol yang ditingkatkan masih dapat berkomunikasi dengan node komputasi yang menjalankan rilis sebelumnya. Untuk memungkinkan hal ini, layanan yang berjalan pada basis data proxy node komputasi meminta melalui RPC ke manajer pusat yang disebut konduktor.
 
 Untuk memperluas penyebaran Nova secara horizontal, kami memiliki konsep sharding penerapan yang disebut sel . Semua penerapan berisi setidaknya satu sel. Untuk informasi lebih lanjut, lihat Sel (v2) .
-
+<p align="center"><img src="https://drive.google.com/uc?export=view&id=1WKpnHu-_GxAFd2bJ0-5udTLYMBRrRd9C"> </p>
 
 
 
