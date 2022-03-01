@@ -8,3 +8,9 @@ Ini membutuhkan layanan OpenStack tambahan berikut untuk fungsi dasar:
 <li>Glance: Ini menyediakan repositori gambar komputasi. Semua instans komputasi diluncurkan dari gambar sekilas.</li>
 <li>Neutron : Ini bertanggung jawab untuk menyediakan jaringan virtual atau fisik yang terhubung dengan instans komputasi saat boot.</li>
 <li>Placement: Ini bertanggung jawab untuk melacak inventaris sumber daya yang tersedia di cloud dan membantu dalam memilih penyedia sumber daya mana yang akan digunakan saat membuat mesin virtuPlacement:l.</li>
+
+Ini juga dapat berintegrasi dengan layanan lain untuk memasukkan: persistent block storage, encrypted disks, and baremetal compute instances.
+
+## For End User
+Sebagai pengguna akhir nova, Anda akan menggunakan nova untuk membuat dan mengelola server dengan alat atau API secara langsung.
+
